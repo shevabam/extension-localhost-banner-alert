@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/icon_default-48.png" sizes="48x48" />
+  <title>Localhost Banner Alert - Settings</title>
+</head>
+
+<body>
+
+
+<div class="localhost-banner-alert__settings-container">
+
+  <header>
+    <img src="../img/icon_default-48.png">
+    <h1>Localhost Banner Alert</h1>
+  </header>
+
+  <h2>Settings</h2>
+
+  <form id="settings" method="post">
+
+    <div class="localhost-banner-alert__form-row">
+      <label for="banner_enabled">Banner Enabled :</label>
+      <select id="banner_enabled"></select>
+    </div>
+    
+    <div class="localhost-banner-alert__form-row">
+      <label for="banner_text">Banner Text :</label>
+      <input type="text" id="banner_text" value="">
+    </div>
+
+    <div class="localhost-banner-alert__form-row">
+      <label for="banner_position">Banner Position :</label>
+      <select id="banner_position"></select>
+    </div>
+
+    <div class="localhost-banner-alert__form-row">
+      <label for="banner_theme">Banner Theme :</label>
+      <select id="banner_theme"></select>
+    </div>
+    
+    <div class="localhost-banner-alert__form-row">
+      <label for="banner_excludeUrls">Exclude URLs <span class="text-minimal">(one URL per line without http)</span> :</label>
+      <textarea id="banner_excludeUrls" rows="7"></textarea>
+    </div>
+
+
+    <div class="localhost-banner-alert__form-row text-center">
+      <input type="submit" value="Save">
+    </div>
+
+    <div class="localhost-banner-alert__form-row text-center">
+      <div id="localhost-banner-alert__status"></div>
+    </div>
+
+  </form>
+
+  <footer>
+    By <a href="https://shevarezo.fr" target="_blank">shevabam</a><span class="localhost-banner-alert__bullet">•</span><a href="https://github.com/shevabam/extension-localhost-banner-alert" target="_blank">More infos</a>
+  </footer>
+
+</div>
+
+<script type="text/javascript" src="../js/config.js"></script>
+<script type="text/javascript" src="../js/settings.js"></script>
+
+</body>
+</html>
